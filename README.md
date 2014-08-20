@@ -1,6 +1,12 @@
 # slacktest
 Use NodeJS, Mocha, Request and Chai to test `POST /files.upload`
 
+This test checks for the following:
+* files.upload returns a file object with expected thumbnail URL's after a file is uploaded
+* The original and thumbnail file names are lowercased and point to the correct files
+* The original and thumbnails are downloadable
+* The file sizes are correct and are ordered in a logical size hierarchy.
+
 ## Environment Setup
 ### Dependencies
 Install Node and NPM on OSX (tested on 10.9). NodeJS is the scripting language used for the test and must be installed on your system.  The quickest way to do this is via brew.  To install brew, then node:

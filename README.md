@@ -1,4 +1,4 @@
-# stacktest
+# slacktest
 Use NodeJS, Mocha, Request and Chai to test `POST /files.upload`
 
 ## Environment Setup

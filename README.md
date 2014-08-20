@@ -25,7 +25,7 @@ npm install
 
 ## Running the test
 
-The access token used in the test will most likely be out of date.  Head to the [slack token page][https://api.slack.com/tokens] to get a token, and update the access token variable in `files_upload_post_mocha.js`:
+The access token used in the test will most likely be out of date.  Head to the [slack token page][1] to get a token, and update the access token variable in `files_upload_post_mocha.js`:
 
 ```javascript
 var accessToken = '?token=xoxp-2562897258-2562897260-2562947180-dea22d';
@@ -50,3 +50,4 @@ Expected output:
   6 passing (8s)
 ```
 
+ [1]: https://api.slack.com/tokens

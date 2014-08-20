@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "preferGlobal": true,
+  "name": "slacktest",
+  "description": "Simple files upload test to the slack service",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tkdan235/slacktest.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "directories": {
+    "bin": "bin",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.21.4",
+    "request": "~2.40.0"
+  }
+}

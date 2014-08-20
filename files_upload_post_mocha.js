@@ -22,7 +22,7 @@ describe('When performing a slack file upload test,', function() {
     // setup test variables
     var apiURL = 'https://slack.com/api';
     var apiEndpoint = '/files.upload';
-    var accessToken = '?token=xoxp-2562897258-2562897260-2562947180-dea22d';
+    var accessToken = 'xoxp-2562897258-2562897260-2562947180-dea22d';
     var fileName = 'APPLE_IPHONE.PNG';
     var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
     var originalRegex = new RegExp(fileName.toLowerCase(), 'g');
@@ -31,7 +31,7 @@ describe('When performing a slack file upload test,', function() {
     var thumb360Regex = new RegExp(fileName.toLowerCase().replace('.png', '_360.png'), 'g');
 
     // make POST call to upload sample file
-    request.post(apiURL + apiEndpoint + accessToken, function optionalCallback (err, httpResponse, body) {
+    request.post(apiURL + apiEndpoint + '?token=' + accessToken, function optionalCallback (err, httpResponse, body) {
       if (err) {
         return console.error('upload failed:', err);
       }

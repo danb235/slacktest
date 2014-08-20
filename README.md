@@ -1,10 +1,11 @@
 # slacktest
 Use NodeJS, Mocha, Request and Chai to test `POST /files.upload`
 
+## Features
 This test checks for the following:
-* files.upload returns a file object with expected thumbnail URL's after a file is uploaded
-* The original and thumbnail file names are lowercased and point to the correct files
-* The original and thumbnails are downloadable
+* `files.upload` returns a file object with expected thumbnail URL's after a file is uploaded.
+* The original and thumbnail file names are lowercased and point to the correct files.
+* The original and thumbnails are downloadable.
 * The file sizes are correct and are ordered in a logical size hierarchy.
 
 ## Environment Setup

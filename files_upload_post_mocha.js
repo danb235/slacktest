@@ -22,7 +22,7 @@ describe('When performing a slack file upload test,', function() {
     // setup test variables
     var apiURL = 'https://slack.com/api';
     var apiEndpoint = '/files.upload';
-    var accessToken = 'xoxp-2562897258-2562897260-2562947180-dea22d';
+    var accessToken = 'ENTER ACCESS TOKEN HERE';
     var fileName = 'APPLE_IPHONE.PNG';
     var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
     var originalRegex = new RegExp(fileName.toLowerCase(), 'g');
